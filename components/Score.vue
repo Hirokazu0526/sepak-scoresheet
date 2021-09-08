@@ -3,24 +3,24 @@
     <div class="score-inner">
       <div class="score-info">
         <div class="countA block fx">
-          <h3 :class="{ servece: true, servece_activeA: serveceActiveA }">
+          <h3 class="servece" :class="{ servece_activeA: serveceActiveA }">
             Team A
           </h3>
-          <p class="point">{{ $store.state.countA }}</p>
+          <p class="point">{{ countA }}</p>
           <div class="counter">
             <button class="plus" @click="countUpA">+</button>
             <button class="minus" @click="countDownA">-</button>
           </div>
         </div>
         <div class="set-count block fx">
-          <h3>{{ $store.state.activeSet }}</h3>
+          <h3>{{ activeSet }}</h3>
           <button class="send" @click="send">send</button>
         </div>
         <div class="countB block fx">
-          <h3 :class="{ servece: true, servece_activeB: serveceActiveB }">
+          <h3 class="servece" :class="{ servece_activeB: serveceActiveB }">
             Team B
           </h3>
-          <p class="point">{{ $store.state.countB }}</p>
+          <p class="point">{{ countB }}</p>
           <div class="counter">
             <button class="plus" @click="countUpB">+</button>
             <button class="minus" @click="countDownB">-</button>
@@ -30,15 +30,15 @@
       <div class="score-set-count">
         <div class="first block fx2">
           <p>1set</p>
-          <h4>{{ $store.state.firstSet }}</h4>
+          <h4>{{ firstSet }}</h4>
         </div>
         <div class="second block fx2">
           <p>2nd</p>
-          <h4>{{ $store.state.secondSet }}</h4>
+          <h4>{{ secondSet }}</h4>
         </div>
         <div class="third block fx2">
           <p>3rd</p>
-          <h4>{{ $store.state.thirdSet }}</h4>
+          <h4>{{ thirdSet }}</h4>
         </div>
       </div>
     </div>
@@ -46,35 +46,44 @@
 </template>
 
 <script>
+import { mapState, mapGetters, mapMutations } from 'vuex'
+
 export default {
   name: 'Score',
   computed: {
-    serveceActiveA() {
-      return this.$store.getters.serveceActiveA
-    },
-    serveceActiveB() {
-      return this.$store.getters.serveceActiveB
-    },
+    ...mapState([
+      'countA',
+      'countB',
+      'firstSet',
+      'secondSet',
+      'thirdSet',
+      'activeSet',
+    ]),
+    ...mapGetters(['serveceActiveA', 'serveceActiveB']),
   },
   methods: {
-    countUpA() {
-      this.$store.commit('countUpA')
-    },
-    countDownA() {
-      this.$store.commit('countDownA')
-    },
-    countUpB() {
-      this.$store.commit('countUpB')
-    },
-    countDownB() {
-      this.$store.commit('countDownB')
-    },
-    send() {
-      this.$store.commit('send')
-    },
-    activeSetting(e) {
-      this.$store.commit('activeSetting', e.target.value)
-    },
+    ...mapMutations([
+      'countUpA',
+      'countDownA',
+      'countUpB',
+      'countDownB',
+      'send',
+    ]),
+    // countUpA() {
+    //   this.$store.commit('countUpA')
+    // },
+    // countDownA() {
+    //   this.$store.commit('countDownA')
+    // },
+    // countUpB() {
+    //   this.$store.commit('countUpB')
+    // },
+    // countDownB() {
+    //   this.$store.commit('countDownB')
+    // },
+    // send() {
+    //   this.$store.commit('send')
+    // },
   },
 }
 </script>

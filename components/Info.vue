@@ -1,11 +1,11 @@
 <template>
   <div class="info">
     <div class="match-info">
-      <div class="block macth-number">
+      <div class="match__number">
         <h3>Match Number</h3>
         <input type="text" placeholder="ex) Match1 " />
       </div>
-      <div class="block macth-time fx">
+      <div class="match__time">
         <div class="start">
           <h3>Start Time</h3>
           <div class="time">
@@ -19,17 +19,16 @@
           </div>
         </div>
       </div>
-      <div class="block match-team">
+      <div class="match__team">
         <div class="team-a">
           <input type="text" placeholder="TEAM A" />
         </div>
-        <span class="match-vs">VS</span>
+        <span class="match__vs">VS</span>
         <div class="team-b">
           <input type="text" placeholder="TEAM B" />
         </div>
       </div>
-      <div class="block"></div>
-      <div class="block servece">
+      <div class="match__servece">
         <h3>First Servece Team</h3>
         <select v-model="selected">
           <option value="">FIRST SERVECE</option>
@@ -45,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="block referee fx">
+      <div class="match__referee">
         <div class="main">
           <h3>Referee</h3>
           <input type="text" />
@@ -97,31 +96,41 @@ export default {
 }
 </script>
 
-<style scoped>
-.match-info {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.block {
-  display: inline-block;
-  width: 50%;
-  margin: 10px 0;
-}
-.fx {
-  display: flex;
-  justify-content: space-around;
+<style scoped lang="scss">
+.match {
+  &__number {
+    width: 250px;
+    display: inline-grid;
+  }
+  &__time {
+    display: inline-flex;
+    width: 415px;
+    & .start,
+    & .end {
+      flex-grow: 1;
+    }
+  }
+  &__team {
+    margin-top: 15px;
+    display: flex;
+  }
+  &__vs {
+    line-height: 2;
+    margin: 0 17px;
+  }
+  &__servece {
+    display: inline-grid;
+    width: 250px;
+    margin-top: 15px;
+  }
+  &__referee {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 input {
   width: 200px;
   height: 30px;
-}
-.match-team,
-.macth-time,
-.referee {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 .start {
   margin-right: 10px;

@@ -8,8 +8,8 @@
           </h3>
           <p class="point">{{ countA }}</p>
           <div class="counter">
-            <button class="plus" @click="countUpA">+</button>
-            <button class="minus" @click="countDownA">-</button>
+            <button class="button" @click="countUpA">+</button>
+            <button class="button" @click="countDownA">-</button>
           </div>
         </div>
         <div class="set-count block fx">
@@ -22,8 +22,8 @@
           </h3>
           <p class="point">{{ countB }}</p>
           <div class="counter">
-            <button class="plus" @click="countUpB">+</button>
-            <button class="minus" @click="countDownB">-</button>
+            <button class="button" @click="countUpB">+</button>
+            <button class="button" @click="countDownB">-</button>
           </div>
         </div>
       </div>
@@ -128,6 +128,7 @@ h3 {
   font-size: 30px;
   background: #6f6f6f;
   line-height: 25px;
+  padding: 0;
 }
 .point {
   width: 150px;
@@ -142,18 +143,6 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.plus {
-  width: 70px;
-  height: 35px;
-  font-size: 36px;
-  line-height: 30px;
-}
-.minus {
-  width: 70px;
-  height: 35px;
-  font-size: 36px;
-  line-height: 0px;
 }
 .score-set-count {
   display: flex;
@@ -178,5 +167,16 @@ h3 {
   align-items: center;
   width: 200px;
   height: 25px;
+}
+.button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  width: 70px;
+  height: 35px;
+  line-height: 1rem;
+  font-size: 36px;
+  padding: 0;
+  background: #6f6f6f;
+  color: #fff;
 }
 </style>

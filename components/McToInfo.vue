@@ -2,11 +2,15 @@
   <div class="mctoinfo">
     <div class="mcto-info">
       <div class="mtco-1set fx-set">
-        <div class="member-change-a block fx mgr">
-          <div class="in block">10</div>
-          <div class="out block">20</div>
-          <div class="in block">20</div>
-          <div class="out block">10</div>
+        <div class="member-change-a block mgr">
+          <div class="fx">
+            <div class="in block">10</div>
+            <div class="out block">20</div>
+          </div>
+          <div class="fx">
+            <div class="in block">20</div>
+            <div class="out block">10</div>
+          </div>
         </div>
         <div class="time-out-a block">
           {{ $store.state.timeOuts.timeOutA1 }}
@@ -15,19 +19,27 @@
         <div class="time-out-b block">
           {{ $store.state.timeOuts.timeOutB1 }}
         </div>
-        <div class="member-change-b block fx mgl">
-          <div class="in block">10</div>
-          <div class="out block">12</div>
-          <div class="in block">12</div>
-          <div class="out block">10</div>
+        <div class="member-change-b block mgl">
+          <div class="fx">
+            <div class="in block">10</div>
+            <div class="out block">20</div>
+          </div>
+          <div class="fx">
+            <div class="in block">20</div>
+            <div class="out block">10</div>
+          </div>
         </div>
       </div>
       <div class="mtco-2set fx-set">
-        <div class="member-change-a block fx mgr">
-          <div class="in block">10</div>
-          <div class="out block">20</div>
-          <div class="in block">20</div>
-          <div class="out block">10</div>
+        <div class="member-change-a block mgr">
+          <div class="fx">
+            <div class="in block">10</div>
+            <div class="out block">20</div>
+          </div>
+          <div class="fx">
+            <div class="in block">20</div>
+            <div class="out block">10</div>
+          </div>
         </div>
         <div class="time-out-a block">
           {{ $store.state.timeOuts.timeOutA2 }}
@@ -36,19 +48,27 @@
         <div class="time-out-b block">
           {{ $store.state.timeOuts.timeOutB2 }}
         </div>
-        <div class="member-change-b block fx mgl">
-          <div class="in block">10</div>
-          <div class="out block">12</div>
-          <div class="in block">12</div>
-          <div class="out block">10</div>
+        <div class="member-change-b block mgl">
+          <div class="fx">
+            <div class="in block">10</div>
+            <div class="out block">20</div>
+          </div>
+          <div class="fx">
+            <div class="in block">20</div>
+            <div class="out block">10</div>
+          </div>
         </div>
       </div>
       <div class="mtco-3set fx-set">
-        <div class="member-change-a block fx mgr">
-          <div class="in block">10</div>
-          <div class="out block">20</div>
-          <div class="in block">20</div>
-          <div class="out block">10</div>
+        <div class="member-change-a block mgr">
+          <div class="fx">
+            <div class="in block">10</div>
+            <div class="out block">20</div>
+          </div>
+          <div class="fx">
+            <div class="in block">20</div>
+            <div class="out block">10</div>
+          </div>
         </div>
         <div class="time-out-a block">
           {{ $store.state.timeOuts.timeOutA3 }}
@@ -57,11 +77,15 @@
         <div class="time-out-b block">
           {{ $store.state.timeOuts.timeOutB3 }}
         </div>
-        <div class="member-change-b block fx mgl">
-          <div class="in block">10</div>
-          <div class="out block">12</div>
-          <div class="in block">12</div>
-          <div class="out block">10</div>
+        <div class="member-change-b block mgl">
+          <div class="fx">
+            <div class="in block">10</div>
+            <div class="out block">20</div>
+          </div>
+          <div class="fx">
+            <div class="in block">20</div>
+            <div class="out block">10</div>
+          </div>
         </div>
       </div>
     </div>

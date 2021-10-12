@@ -67,7 +67,7 @@ h3 {
 }
 .fx {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .bra {

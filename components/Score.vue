@@ -69,21 +69,6 @@ export default {
       'countDownB',
       'send',
     ]),
-    // countUpA() {
-    //   this.$store.commit('countUpA')
-    // },
-    // countDownA() {
-    //   this.$store.commit('countDownA')
-    // },
-    // countUpB() {
-    //   this.$store.commit('countUpB')
-    // },
-    // countDownB() {
-    //   this.$store.commit('countDownB')
-    // },
-    // send() {
-    //   this.$store.commit('send')
-    // },
   },
 }
 </script>
@@ -124,6 +109,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
 }
 .set-count h5 {
   width: 110px;

@@ -101,7 +101,6 @@ export default {}
   margin-bottom: 10px;
 }
 .member-inner {
-  width: 90%;
   margin: 0 auto;
 }
 .member-info {

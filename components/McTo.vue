@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .mcto {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .mcto-mc {
   display: flex;

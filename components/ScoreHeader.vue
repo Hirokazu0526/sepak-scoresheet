@@ -27,7 +27,7 @@ export default {
 }
 .btn {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 20px;
 }
 </style>

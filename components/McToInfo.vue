@@ -121,7 +121,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   width: 150px;
-  height: 60px;
+  height: 30px;
   justify-content: space-around;
   align-items: center;
 }

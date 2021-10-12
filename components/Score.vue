@@ -75,7 +75,7 @@ export default {
 
 <style scoped>
 .score {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 h3 {
   width: 200px;
@@ -98,7 +98,7 @@ h3 {
 .score-info {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .block {
   display: inline-block;
@@ -134,7 +134,6 @@ h3 {
   height: 70px;
   font-size: 50px;
   text-align: center;
-  margin-bottom: 15px;
   border: 1px solid #6f6f6f;
 }
 .counter {

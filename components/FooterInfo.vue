@@ -23,8 +23,7 @@ export default {
 
 <style scoped>
 .footer-info {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
